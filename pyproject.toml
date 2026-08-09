@@ -1,0 +1,17 @@
+[project]
+name = "walmart-airflow-dbt-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "shourya845", email = "shouryanegi9206@gmail.com" }
+]
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+walmart-airflow-dbt-project = "walmart_airflow_dbt_project:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
