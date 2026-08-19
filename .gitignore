@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Local environment and secret files
+.env
+*.env
+profiles.yml
+.user.yml
+
+# Runtime logs and generated outputs
+logs/
+airflow/logs/
+**/logs/
+target/
+dbt_packages/
