@@ -1,5 +1,53 @@
+# Replace your .gitignore with this
+cat > .gitignore << 'EOF'
+# Credentials & Secrets
+.env
+.env.local
+*.pem
+*.key
+dapi*
+databricks_token*
 
+# Airflow
+logs/
+logs/**/*
+*.log
+airflow.db
+airflow_db.sqlite
+airflow-webserver.pid
+dags/__pycache__/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# dbt
 target/
 dbt_packages/
-logs/
-.env
+dbt_artifacts/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.project
+.pydevproject
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Windows/OneDrive specific
+desktop.ini
+EOF
+
+git add .gitignore
+git commit -m "Complete .gitignore for Windows development"
